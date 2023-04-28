@@ -1,0 +1,1 @@
+to run the project : py manage.py runserver // open terminal-> change the directory to leave_site -> run the command
