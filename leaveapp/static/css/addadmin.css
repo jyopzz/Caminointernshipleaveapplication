@@ -1,0 +1,85 @@
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #04a7f9;
+    --bs-btn-border-color: #a6aeb8;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b63d7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+body {
+    background-color: #fbfbfb;
+    opacity: 89%;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+ 
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+  .dropdown-menu {
+    min-width: 100px !important;
+  }
+  .btn-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #c2d4e4;
+    --bs-btn-border-color: #d0d9e0;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #b6c6d7;
+    --bs-btn-hover-border-color: #adb9c3;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #bcd2e1;
+    --bs-btn-active-border-color: #eceff1;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #becad4;
+    --bs-btn-disabled-border-color: #a5afb7;
+}
+.list-group-item.active {
+    z-index: 2;
+    color: var(--bs-list-group-active-color);
+    background-color: #8a94a4;
+    border-color: #c3c7ce;
+}
+.img{
+  opacity: 80%;
+}

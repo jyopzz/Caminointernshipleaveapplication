@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    {%load static %}
+    <link href="{% static 'css/login.css' %}" rel="stylesheet">
+</head>
+<body class="body" background="{% static 'images/background.png' %}">
+  <header class="header bg-light" >
+    <div class="row">
+        
+        <div class="col-6 col-md-6 ">
+            <h2 >CAMINO </h2>
+        </div>
+    </div>
+</header>
+    <div class="wrapper fadeInDown">
+        <div id="formContent" class="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <i class="fa-solid fa-user" id="icon" alt="User Icon"></i>
+          </div>
+      
+          <!-- Login Form -->
+          <form action="logged" method="GET">
+            {%csrf_token%}
+            <input type="text" id="login" class="fadeIn second" name="username" placeholder="login">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="forgotten" href="#">Forgot Password?</a>
+          </div>
+      
+        </div>
+      </div>
+      <script src="https://kit.fontawesome.com/01bc730358.js" crossorigin="anonymous"></script>
+</body>
+</html>
